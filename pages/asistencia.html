@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia - Clon Playstation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="../images/favicon.ico" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body">
+    <header id="arriba" class="header">
+        <a href="../index.html"> 
+            <img class="logoInicio" src="../images/logoplaystation.png" alt="logo playstation" width="100" height="100" >
+        </a>
+        <nav class="nav"> 
+            <ul class="nav__list">
+                <li clase="nav__item"> <a class="nav__link" href="juegos.html">Juegos</a></li>
+                <li clase="nav__item"> <a class="nav__link" href="hardware.html">Hardware</a></li>
+                <li clase="nav__item"> <a class="nav__link" href="psplus.html">PS Plus</a></li>
+                <li clase="nav__item"> <a class="nav__link" href="asistencia.html">Asistencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main class="main"> 
+        <!-- Contacto -->
+        <section class="contacto">
+            <h1 class="subscribe__heading--lessMargin">Contacto</h1>
+            <p class="contacto__descripcion">Teléfono: (261) 111 1111</p>
+            <p class="contacto__descripcion">Mail: asistencia_playstation_falso@gmail.com</p>
+
+        </section>
+        
+        <form class="form" action="" method="" enctype="">
+            <h1 class="form__text">Escribinos tu consulta</h1>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input required type="text" id="nombre" name="nombre" placeholder="Ingresar nombre..">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input required type="email" id="email" name="email" placeholder="Ingresar email..">
+            </div>
+
+            <div>
+                <label for="sexo">Sexo:</label>
+                <select required name="sexo" id="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                    <option value="prefiero-no-especificar">Prefiero no especificar</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="newsletter">Suscribirse a recibir las últimas novedades por email:</label>
+                <input checked type="checkbox"> 
+            </div>
+
+            <div>
+                <label for="consulta">Contanos tu duda o problema:</label>
+                <textarea class="textarea" required name="consulta" id="consulta" cols="30" rows="15"></textarea>
+            </div>
+
+            <div>
+                <button>Enviar</button>
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer class="footer"> 
+
+        <!-- Redes sociales -->
+        <section class="redes">
+            <p class="redes__texto">Seguinos en redes sociales</p>
+            <ul class="redes__list">
+                <li> <a target="_blank" href="https://twitter.com/playstation_la?lang=es"><img src="../images/icon-twitter.png" alt="twitter de playstation" width="100" height="100"></a></li>
+                <li> <a target="_blank" href="https://www.facebook.com/Latam.PlayStation/"><img src="../images/icon-facebook.png" alt="facebook de playstation" width="100" height="100"></a></li>
+                <li> <a target="_blank" href="https://www.instagram.com/playstation_la/?hl=es"><img src="../images/icon-intagram.png" alt="instagram de playstation" width="100" height="100"></a></li>
+                <li> <a target="_blank" href="https://www.youtube.com/channel/UCvAaEWzVQuyzJLPaDWmsVWQ"><img src="../images/icon-youtube.png" alt="canal youtube de playstation" width="100" height="100"></a></li>
+            </ul>
+        </section>
+
+        <!-- Link Volver Arriba -->
+        <div class="volverArriba">
+            <a href="#arriba" class="volverArriba__link">Volver a arriba</a>
+        </div>    
+       
+        <!-- Nav del Footer -->
+        <nav class="navFooter"> 
+            <ul class="navFooter__list navFooter__text">
+                <li> <a class="navFooter__link" href="../index.html">Inicio</a></li>
+                <li> <a class="navFooter__link" href="juegos.html">Juegos</a></li>
+                <li> <a class="navFooter__link" href="hardware.html">Hardware</a></li>
+                <li> <a class="navFooter__link" href="psplus.html">PS Plus</a></li>
+                <li> <a class="navFooter__link" href="asistencia.html">Asistencia</a></li>
+            </ul>
+        </nav>
+
+        <!-- "Legal" -->
+        <section class="legal">
+            <p class="legal__text">Derechos reservados PlayStation</p>
+            <img class="legal__image" src="../images/logoplaystationfooter.png" alt="logo playstation" width="100" height="100" >
+        </section>
+    </footer>
+</body>
+</html>

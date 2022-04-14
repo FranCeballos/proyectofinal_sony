@@ -1,0 +1,766 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: white;
+    padding: 0.5rem;
+    position: fixed;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoInicio {
+    margin-right: 30px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav__list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.main {
+    margin-top: 60px;
+}
+.seccion1 {
+    max-height: 100%;
+    position: relative;
+}
+.seccion1__titulo{
+    padding: 25% 4rem 25% 4rem;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    position: relative;
+}
+
+.seccion1__parrafo {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0px 0px 5px black;
+    position: relative;
+}
+
+.seccion1__fondo {
+    background-image: url(../images/main-16:9-playnotienelimites.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.seccion1__fondo::before {
+    content: "";
+    max-width: 100%;
+    min-height: 100%;
+    background-position: bottom;
+    position: absolute;
+    background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,1) 150% );
+}
+
+.seccionNormal {
+    padding: 60px;
+    margin: 0;
+    display: block;
+    position: relative;
+
+}
+
+.seccionSmall {
+    padding: 15% 50px 50px 50px;
+    margin: 0;
+    display: block;
+    position: relative;
+    min-height: 40%;
+}
+
+.seccion__textoNormal {
+    /* background-color: red; */
+    margin-top: 30%;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.seccion__textoSmall {
+    /* background-color: red; */
+    margin-top: 10%;
+    margin-right: 25%;
+    max-width: 50%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.seccion__titulo--blanco {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.seccion__parrafo--blanco {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.seccion__titulo--negro {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
+    position: relative;
+}
+
+.seccion__titulo--negroMargin {
+    margin: 0px 0px 20px 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
+    position: relative;
+}
+
+.seccion__parrafo--negro {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: black;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.seccion__parrafo--negroMargin {
+    margin: 0px 0px 20px 20px;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: black;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.descubremas__box--blanco {
+    padding: 12px 15px 12px 15px;
+    margin: 30px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+    background-color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    max-width: fit-content;
+}
+
+.descubremas__text--negro {
+    text-decoration: none;
+    color: black;
+}
+
+.descubremas__box--negro {
+    padding: 12px 15px 12px 15px;
+    margin: 30px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+    background-color: black;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    max-width: fit-content;
+}
+
+.descubremas__box--naranja {
+    padding: 12px 15px 12px 15px;
+    margin: 20px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+    background-color: rgb(243, 174, 0);
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    max-width: fit-content;
+}
+
+.descubremas__text--blanco {
+    text-decoration: none;
+    color: white;
+}
+
+.seccion2__image {
+    background-image: url(../images/collagejuegosplaystation.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+
+
+}
+
+/* No logro hacer que este degradez se ajuste a la seccion independientemente de las dimensiones de la ventana del navegador.
+Por alguna razon si lo hace el degradez de la primera seccion */
+.seccion2__image::before {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to left bottom, rgba(0,0,0,0), rgba(0,0,0,1) 95%);
+}
+
+.seccion3__image {
+    background-image: url(../images/ecosistemaplaystation.jpeg);
+    background-size: 75%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.seccion4__image {
+    background-image: url(../images/fondopsplus.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    width: 100%;
+}
+
+.seccion5__image {
+    background-color: rgb(0, 32, 90) ;
+    min-height: 30vh;
+
+}
+
+.seccion5__tools {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: absolute;
+}
+
+.footer {
+    background-color: rgb(0, 45, 130);
+    padding: 5%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.redes {
+    margin-bottom: 10%;
+}
+
+.redes__texto {
+    font-weight: 500;
+    color: white;
+}
+.redes__list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+.volverArriba {
+    margin-bottom: 3%;
+}
+
+.volverArriba__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.navFooter {
+    margin-bottom: 3%;
+}
+
+.navFooter__list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+}
+
+.navFooter__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.legal__text {
+    color: white;
+}
+
+/* Clases añadidas para hacer la pagina de Juegos */
+
+.seccion1Juegos__fondo {
+    background-image: url(../images/juegos/fondoseccionjuegos.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.forbidden {
+    /* background-color: red; */
+}
+
+.forbidden__img {
+    height: 20%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -96;
+}
+
+.forbidden__grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+
+    column-gap: 20px;
+    align-items: center;
+}
+
+.forbidden__iframe {
+    border-radius: 50px;
+    justify-content: center;
+
+    /* position: absolute; */
+}
+
+.iframeJuegos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin
+}
+
+.doble__grid {
+    margin: 50px 50px 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+
+.doble__box {
+    display: flex;
+    flex-direction: column ;
+}
+
+.doble__img {
+    margin-bottom: 40px;
+}
+
+/* Grid de Juegos */
+
+.exclusivos {
+    padding: 50px;
+}
+
+.exclusivosGrid {
+    padding: 15%;
+    max-width: 100%;
+    min-height: 2000px;
+    /* display: grid;
+    grid-template-areas:
+    "item0 item1 item1 item2 item2 item 3 item3 item0"
+    "item0 item4 item4 item5 item5 item 6 item6 item0"
+    "item0 item0 item7 item7 item8 item8 item0 item0";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 5%;
+    background-color: rgb(0, 32, 90);
+    grid-column-start: auto; */
+}
+
+/* .item1 {grid-column: item1;}
+.item2 {grid-area: item2;}
+.item3 {grid-area: item3;}
+.item4 {grid-area: item4;}
+.item5 {grid-area: item5;}
+.item6 {grid-area: item6;}
+.item7 {grid-area: item7;}
+.item8 {grid-area: item8;} */
+
+.exclusivosGrid__box {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* margin: 10px; */
+}
+
+.exclusivosGrid__img {
+    display: inline-block;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.exclusivosGrid__textBox {
+
+}
+
+.exclusivosGrid__text {
+    font-size: 1rem;
+}
+
+/* Fin de Grids de Juegos */
+
+.lanza {
+    padding: 50px;
+}
+.lanza__grid {
+
+}
+
+.lanza__flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Clases extras usadas en pagina de Hardware */
+
+.seccion1Hardware__fondo {
+    background-image: url(../images/hardware/fondoseccion1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.seccion2Hardware {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+   background-color: rgb(0, 79, 237);
+}
+
+.seccion2Hardware__parte {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    max-width: 30%;
+}
+
+.seccion2Hardware__titulo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 300;
+}
+
+.seccion2Hardware__texto {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* GRID Ecosistema Play */
+.ecosistema {
+    min-height: 500px;
+    padding: 50px;
+}
+
+/* .ecosistema__grid {
+    background-color: red;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px ;
+    /* grid-template-areas:
+    "none consola consola none"
+    "dualsense dualsense pulse3d pulse3d"
+    "recarga recarga multimedia multimedia"
+    "camara camara covers covers";
+    min-width: 100%;
+    gap: 10%;
+} */
+
+.ecosistema__objbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.ecosistema__img {
+    width: 100%;
+    height: 100%;
+}
+
+.ecosistema__heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.ecosistema__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.app {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+    max-width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.app__linkbox {
+    width: 20%;
+    height: 20%;
+}
+
+.app__img {
+    max-width: 100%;
+
+}
+
+/* Clases añadidas en la pagina de PS Plus */
+
+.seccion1PsPlus__fondo {
+    background-image: url(../images/psplus/psplusprincipal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.seccion1PsPlus__titulo{
+    padding: 25% 4rem 25% 4rem;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0px 0px 5px rgb(255, 255, 255); */
+    position: relative;
+}
+
+.subscribe {
+    padding: 60px 10% 60px 10%;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.subscribe--black {
+    background-color: black;
+    padding: 60px 10% 60px 10%;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.subscribe__heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.subscribe__heading--lessMargin {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+.subscribe__heading--white {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.subscribe__heading--white {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.subscribe__grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.subscribe__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+}
+
+.subscribe__price {
+    margin-top: 20px;
+}
+
+.subscribe__price--white {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.beneficios {
+    background-color: rgb(223, 223, 223);
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 10% 50px 10%;
+}
+
+.beneficios__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "ben1 ben2"
+        "ben3 ben4"
+        "ben5 ben6"
+    ;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 0% 20% 0% 20%;
+}
+
+.ben1 {
+    grid-area: ben1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ben2, .ben2 img {
+    grid-area: ben2;
+
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.ben3, .ben3 img {
+    grid-area: ben3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.ben4, .ben4 p {
+    grid-area: ben4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.ben5 {
+    grid-area: ben5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.ben6, .ben6 img {
+    grid-area: ben6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.beneficios__text {
+    font-size: 25px;
+}
+
+/* Clases añadidas para la pagina de Asistencia */
+
+.contacto__descripcion {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.contacto {
+    padding: 30px 0px 100px 0px
+}
+
+.form {
+    padding: 40px 100px 40px 100px;
+}
+
+.formtext {
+    padding-bottom: 30px;
+}
+
+.textarea {
+    display: block;
+}
