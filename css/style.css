@@ -52,6 +52,10 @@
     font-size: 14px;
 }
 
+.header__icon {
+    display: none;
+}
+
 .main {
     margin-top: 60px;
 }
@@ -113,7 +117,7 @@
 .seccion__textoNormal {
     /* background-color: red; */
     margin-top: 30%;
-    max-width: 50%;
+    max-width: 100%;
     padding: 20px;
 }
 
@@ -121,7 +125,7 @@
     /* background-color: red; */
     margin-top: 10%;
     margin-right: 25%;
-    max-width: 50%;
+    max-width: 100%;
     padding: 20px;
     display: inline-block;
 }
@@ -297,18 +301,18 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 .redes__texto {
     font-weight: 500;
     color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .redes__list {
     list-style: none;
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px 10%px 0px 10%;
 }
+
 .volverArriba {
     margin-bottom: 3%;
 }
@@ -343,6 +347,7 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 
 .legal__text {
     color: white;
+    margin-top: 20px;
 }
 
 /* Clases añadidas para hacer la pagina de Juegos */
@@ -472,7 +477,6 @@ Por alguna razon si lo hace el degradez de la primera seccion */
     padding: 50px;
 }
 .lanza__grid {
-
 }
 
 .lanza__flex {
@@ -763,4 +767,94 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 
 .textarea {
     display: block;
+}
+
+@media screen and (max-width: 425px) {
+    .redes__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .navFooter__list {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        gap: 2rem;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .nav__list {
+        display: none;
+
+    }
+
+    .header__icon {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-right: 15px;
+    }
+
+    .seccion1PsPlus__titulo {
+        padding: 100px 40px 100px 40px;
+        font-size: 3rem;
+    }
+
+    .subscribe__heading {
+        font-size: 35px;
+    }
+
+    .subscribe__grid {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+
+    .beneficios__grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .beneficios__text {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 452px) {
+    .descubremas__text--negro {
+        font-size: 12px;
+    }
+
+    .descubremas__text--blanco {
+        font-size: 12px;
+    }
+
+    .descubremas__
+}
+
+@media screen and (max-width: 375px) {
+    .seccion1__titulo {
+        padding: 25% 50px 25% 50px;
+        font-size: 3.5rem;
+    }
+
+    .seccion__textoNormal {
+        padding: 20px 20px 20px 0px;
+    }
+
+    .seccion__textoSmall {
+        padding: 20px 20px 20px 0px;
+    }
+
+    
+
 }
