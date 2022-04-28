@@ -393,7 +393,8 @@ Por alguna razon si lo hace el degradez de la primera seccion */
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin
+    transform:translateY(-120px);
+    box-shadow: black;
 }
 
 .doble__grid {
@@ -411,46 +412,34 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 
 .doble__img {
     margin-bottom: 40px;
+    border-radius: 40px;
 }
 
 /* Grid de Juegos */
 
 .exclusivos {
-    padding: 50px;
+    padding: 50px 50px 0px 50px;
 }
 
 .exclusivosGrid {
-    padding: 15%;
+    padding: 0px 15% 5% 15%;
     max-width: 100%;
-    min-height: 2000px;
-    /* display: grid;
-    grid-template-areas:
-    "item0 item1 item1 item2 item2 item 3 item3 item0"
-    "item0 item4 item4 item5 item5 item 6 item6 item0"
-    "item0 item0 item7 item7 item8 item8 item0 item0";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    min-height: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    row-gap: 5%;
-    background-color: rgb(0, 32, 90);
-    grid-column-start: auto; */
+
+    column-gap: 20px;
+    
 }
 
-/* .item1 {grid-column: item1;}
-.item2 {grid-area: item2;}
-.item3 {grid-area: item3;}
-.item4 {grid-area: item4;}
-.item5 {grid-area: item5;}
-.item6 {grid-area: item6;}
-.item7 {grid-area: item7;}
-.item8 {grid-area: item8;} */
 
 .exclusivosGrid__box {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    width: 80%;
-    min-height: 90%;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -459,8 +448,9 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 
 .exclusivosGrid__img {
     display: inline-block;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 40px;
 }
 
 .exclusivosGrid__textBox {
@@ -469,19 +459,36 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 
 .exclusivosGrid__text {
     font-size: 1rem;
+    text-align: center;
 }
 
 /* Fin de Grids de Juegos */
-
 .lanza {
-    padding: 50px;
+    min-height: 50vh;
+    padding: 10px 10px 100px 10px;
 }
-.lanza__grid {
+.lanzaGrid {
+    padding: 10px 50px 10px 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    min-height: 50%;
+
 }
 
-.lanza__flex {
+.lanza__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.lanza__box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    top: 0;
 }
 
 /* Clases extras usadas en pagina de Hardware */
