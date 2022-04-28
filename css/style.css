@@ -42,7 +42,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
+    height: 40px;
     gap: 2rem;
 }
 
@@ -50,10 +50,16 @@
     text-decoration: none;
     color: black;
     font-size: 14px;
+    padding: 0px 10px 0px 10px;
+}
+
+.nav__link:hover {
+    color: rgb(133, 150, 160);
 }
 
 .header__icon {
     display: none;
+    color: white;
 }
 
 .main {
@@ -72,6 +78,28 @@
     position: relative;
 }
 
+#animacion--entrada {
+    animation-duration: 2s;
+    animation-name: zoomin;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(.3,.71,.17,1.04);
+   
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 .seccion1__parrafo {
     text-align: center;
     color: white;
@@ -103,7 +131,6 @@
     margin: 0;
     display: block;
     position: relative;
-
 }
 
 .seccionSmall {
@@ -240,13 +267,8 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-
-
-
 }
 
-/* No logro hacer que este degradez se ajuste a la seccion independientemente de las dimensiones de la ventana del navegador.
-Por alguna razon si lo hace el degradez de la primera seccion */
 .seccion2__image::before {
     content: "";
     width: 100%;
@@ -257,7 +279,7 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 
 .seccion3__image {
     background-image: url(../images/ecosistemaplaystation.jpeg);
-    background-size: 75%;
+    background-size: 60%;
     background-position: bottom right;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -310,7 +332,13 @@ Por alguna razon si lo hace el degradez de la primera seccion */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 20px 10%px 0px 10%;
+    padding: 20px 10% 0px 10%;
+}
+.redes__img {
+    transition: all 0.3s ease;
+}
+.redes__img:hover {
+    transform: scale(1.25);
 }
 
 .volverArriba {
@@ -371,7 +399,7 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 }
 
 .forbidden__grid {
-    margin-top: 40px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -384,8 +412,6 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 .forbidden__iframe {
     border-radius: 50px;
     justify-content: center;
-
-    /* position: absolute; */
 }
 
 .iframeJuegos {
@@ -422,7 +448,7 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 }
 
 .exclusivosGrid {
-    padding: 0px 15% 5% 15%;
+    padding: 10% 15% 5% 15%;
     max-width: 100%;
     min-height: 1100px;
     display: grid;
@@ -430,12 +456,16 @@ Por alguna razon si lo hace el degradez de la primera seccion */
     grid-template-rows: 1fr 1fr 1fr;
 
     column-gap: 20px;
+    row-gap: 40px;
+
+    background-color: rgb(0, 45, 130);
     
 }
 
 
+
+
 .exclusivosGrid__box {
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -443,7 +473,6 @@ Por alguna razon si lo hace el degradez de la primera seccion */
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* margin: 10px; */
 }
 
 .exclusivosGrid__img {
@@ -460,6 +489,7 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 .exclusivosGrid__text {
     font-size: 1rem;
     text-align: center;
+    color: white;
 }
 
 /* Fin de Grids de Juegos */
@@ -539,21 +569,6 @@ Por alguna razon si lo hace el degradez de la primera seccion */
     padding: 50px;
 }
 
-/* .ecosistema__grid {
-    background-color: red;
-    padding: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px ;
-    /* grid-template-areas:
-    "none consola consola none"
-    "dualsense dualsense pulse3d pulse3d"
-    "recarga recarga multimedia multimedia"
-    "camara camara covers covers";
-    min-width: 100%;
-    gap: 10%;
-} */
-
 .ecosistema__objbox {
     display: flex;
     flex-direction: column;
@@ -611,7 +626,6 @@ Por alguna razon si lo hace el degradez de la primera seccion */
     text-align: center;
     font-size: 4rem;
     color: rgb(255, 255, 255);
-    /* text-shadow: 0px 0px 5px rgb(255, 255, 255); */
     position: relative;
 }
 
@@ -807,6 +821,7 @@ Por alguna razon si lo hace el degradez de la primera seccion */
         display: inline-block;
         font-size: 1.5rem;
         margin-right: 15px;
+        color: black;
     }
 
     .seccion1PsPlus__titulo {
@@ -831,6 +846,10 @@ Por alguna razon si lo hace el degradez de la primera seccion */
 
     .beneficios__text {
         font-size: 20px;
+    }
+
+    .seccion3__image {
+        background-size: 90%;
     }
 
 
