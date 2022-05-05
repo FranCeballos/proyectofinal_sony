@@ -799,6 +799,10 @@
     display: block;
 }
 
+.form__space {
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: 425px) {
     .redes__list {
         display: grid;

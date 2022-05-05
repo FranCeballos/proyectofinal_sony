@@ -40,42 +40,58 @@
             <p class="contacto__descripcion">Mail: asistencia_playstation_falso@gmail.com</p>
 
         </section>
+
+        <!-- Formulario -->
         
         <form class="form" action="" method="" enctype="">
             <h1 class="form__text">Escribinos tu consulta</h1>
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input required type="text" id="nombre" name="nombre" placeholder="Ingresar nombre..">
+
+            <!-- Nombre -->
+            <div class="row g-3 align-items-center form__space">
+                <div class="col-auto">
+                  <label for="inputName6" class="col-form-label">Nombre</label>
+                </div>
+                <div class="col-auto">
+                  <input required type="text" id="inputName6" class="form-control" aria-describedby="Name">
+                </div>
             </div>
 
-            <div>
-                <label for="email">Email:</label>
-                <input required type="email" id="email" name="email" placeholder="Ingresar email..">
+            <!-- Mail -->
+            <div class="row g-3 align-items-center form__space">
+                <div class="col-auto">
+                  <label for="inputMaile6" class="col-form-label">Mail</label>
+                </div>
+                <div class="col-auto">
+                  <input required type="email" id="inputMail6" class="form-control" aria-describedby="Mail">
+                </div>
             </div>
 
-            <div>
-                <label for="sexo">Sexo:</label>
-                <select required name="sexo" id="sexo">
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                    <option value="Otro">Otro</option>
-                    <option value="prefiero-no-especificar">Prefiero no especificar</option>
+            <!-- Sexo -->
+            <div class="input-group mb-3 form__space">
+                <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Elegir...</option>
+                  <option value="1">Masculino</option>
+                  <option value="2">Femenino</option>
+                  <option value="3">Otro</option>
                 </select>
+              </div>
+            
+            <!-- Duda -->
+            <div class="mb-3 form__space">
+                <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu duda:</label>
+                <textarea required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-
+                
+            <!-- Checkbox Novedades -->
             <div>
-                <label for="newsletter">Suscribirse a recibir las últimas novedades por email:</label>
+                <label for="newsletter form__space">Suscribirse a recibir las últimas novedades por email:</label>
                 <input checked type="checkbox"> 
             </div>
 
+            <!-- Botón Enviar -->
             <div>
-                <label for="consulta">Contanos tu duda o problema:</label>
-                <textarea class="textarea" required name="consulta" id="consulta" cols="30" rows="15"></textarea>
-            </div>
-
-            <div>
-                <button>Enviar</button>
-                <input type="reset" value="Limpiar">
+                <button type="button form__space" class="btn btn-primary">Enviar</button>
             </div>
         </form>
     </main>
