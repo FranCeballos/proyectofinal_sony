@@ -26,6 +26,8 @@
 .logoInicio {
     margin-right: 30px;
     margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     width: 40px;
     height: 40px;
     display: inline;
@@ -44,6 +46,8 @@
     align-items: center;
     height: 40px;
     gap: 2rem;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav__link {
@@ -76,6 +80,7 @@
     color: white;
     text-shadow: 0px 0px 5px black;
     position: relative;
+    margin: 0;
 }
 
 #animacion--entrada {
@@ -254,11 +259,13 @@
     color: black;
     position: relative;
     max-width: fit-content;
+    
 }
 
 .descubremas__text--blanco {
     text-decoration: none;
     color: white;
+    margin: 0;
 }
 
 .seccion2__image {
@@ -363,6 +370,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0;
 
     gap: 2rem;
 }
@@ -627,6 +635,7 @@
     font-size: 4rem;
     color: rgb(255, 255, 255);
     position: relative;
+    margin: 0;
 }
 
 .subscribe {
