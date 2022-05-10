@@ -1,0 +1,250 @@
+.main {
+    margin-top: 60px;
+}
+.seccion1 {
+    max-height: 100%;
+    position: relative;
+
+    &__titulo {
+        padding: 25% 4rem 25% 4rem;
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        position: relative;
+        margin: 0;
+    }
+    
+    &__parrafo {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        text-shadow: 0px 0px 5px black;
+        position: relative;
+    }
+
+    &__fondo {
+        background-image: url(../images/main-16:9-playnotienelimites.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        min-height: 100%;
+    }
+    
+    &__fondo::before {
+        content: "";
+        max-width: 100%;
+        min-height: 100%;
+        background-position: bottom;
+        position: absolute;
+        background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,1) 150% );
+    }
+}
+
+#animacion--entrada {
+    animation-duration: 2s;
+    animation-name: zoomin;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(.3,.71,.17,1.04);
+   
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.seccionNormal {
+    padding: 60px;
+    margin: 0;
+    display: block;
+    position: relative;
+}
+
+.seccionSmall {
+    padding: 15% 50px 50px 50px;
+    margin: 0;
+    display: block;
+    position: relative;
+    min-height: 40%;
+}
+
+.seccion__textoNormal {
+    /* background-color: red; */
+    margin-top: 30%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.seccion__textoSmall {
+    /* background-color: red; */
+    margin-top: 10%;
+    margin-right: 25%;
+    max-width: 100%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.seccion__titulo--blanco {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.seccion__parrafo--blanco {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.seccion__titulo--negro {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
+    position: relative;
+}
+
+.seccion__titulo--negroMargin {
+    margin: 0px 0px 20px 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
+    position: relative;
+}
+
+.seccion__parrafo--negro {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: black;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.seccion__parrafo--negroMargin {
+    margin: 0px 0px 20px 20px;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: black;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.descubremas__box--blanco {
+    padding: 12px 15px 12px 15px;
+    margin: 30px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+    background-color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    max-width: fit-content;
+}
+
+.descubremas__text--negro {
+    text-decoration: none;
+    color: black;
+}
+
+.descubremas__box--negro {
+    padding: 12px 15px 12px 15px;
+    margin: 30px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+    background-color: black;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    max-width: fit-content;
+}
+
+.descubremas__box--naranja {
+    padding: 12px 15px 12px 15px;
+    margin: 20px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+    background-color: rgb(243, 174, 0);
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    max-width: fit-content;
+    
+}
+
+.descubremas__text--blanco {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.seccion2__image {
+    background-image: url(../images/collagejuegosplaystation.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.seccion2__image::before {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to left bottom, rgba(0,0,0,0), rgba(0,0,0,1) 95%);
+}
+
+.seccion3__image {
+    background-image: url(../images/ecosistemaplaystation.jpeg);
+    background-size: 60%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.seccion4__image {
+    background-image: url(../images/fondopsplus.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    width: 100%;
+}
+
+.seccion5__image {
+    background-color: rgb(0, 32, 90) ;
+    min-height: 30vh;
+
+}
+
+.seccion5__tools {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: absolute;
+}

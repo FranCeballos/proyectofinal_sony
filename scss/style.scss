@@ -1,0 +1,104 @@
+@import './base/reset';
+@import './base/typo';
+
+@import './layout/footer';
+@import './layout/forms';
+@import './layout/header';
+
+@import './vendors/bootstrap';
+
+@import './views/asistencia';
+@import './views/hardware';
+@import './views/inicio';
+@import './views/juegos';
+@import './views/psplus';
+
+@media screen and (max-width: 425px) {
+    .redes__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .navFooter__list {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        gap: 2rem;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .nav__list {
+        display: none;
+
+    }
+
+    .header__icon {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-right: 15px;
+        color: black;
+    }
+
+    .seccion1PsPlus__titulo {
+        padding: 100px 40px 100px 40px;
+        font-size: 3rem;
+    }
+
+    .subscribe__heading {
+        font-size: 35px;
+    }
+
+    .subscribe__grid {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+
+    .beneficios__grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .beneficios__text {
+        font-size: 20px;
+    }
+
+    .seccion3__image {
+        background-size: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 452px) {
+    .descubremas__text--negro {
+        font-size: 12px;
+    }
+
+    .descubremas__text--blanco {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .seccion1__titulo {
+        padding: 25% 50px 25% 50px;
+        font-size: 3.5rem;
+    }
+
+    .seccion__textoNormal {
+        padding: 20px 20px 20px 0px;
+    }
+
+    .seccion__textoSmall {
+        padding: 20px 20px 20px 0px;
+    }
+}

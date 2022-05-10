@@ -1,0 +1,23 @@
+{
+  "name": "proyectofinal_sony",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./scss/style.scss ./css/style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranCeballos/proyectofinal_sony.git"
+  },
+  "author": "Francisco Ceballos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranCeballos/proyectofinal_sony/issues"
+  },
+  "homepage": "https://github.com/FranCeballos/proyectofinal_sony#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

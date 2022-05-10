@@ -1,0 +1,154 @@
+/* Clases añadidas en la pagina de PS Plus */
+
+.seccion1PsPlus__fondo {
+    background-image: url(../images/psplus/psplusprincipal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.seccion1PsPlus__titulo{
+    padding: 25% 4rem 25% 4rem;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0;
+}
+
+.subscribe {
+    padding: 60px 10% 60px 10%;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.subscribe--black {
+    background-color: black;
+    padding: 60px 10% 60px 10%;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.subscribe__heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.subscribe__heading--lessMargin {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+.subscribe__heading--white {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.subscribe__heading--white {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.subscribe__grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.subscribe__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+}
+
+.subscribe__price {
+    margin-top: 20px;
+}
+
+.subscribe__price--white {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.beneficios {
+    background-color: rgb(223, 223, 223);
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 10% 50px 10%;
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "ben1 ben2"
+            "ben3 ben4"
+            "ben5 ben6"
+        ;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin: 0% 20% 0% 20%;
+    }
+}
+
+.ben1 {
+    grid-area: ben1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ben2, .ben2 img {
+    grid-area: ben2;
+
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.ben3, .ben3 img {
+    grid-area: ben3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.ben4, .ben4 p {
+    grid-area: ben4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.ben5 {
+    grid-area: ben5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.ben6, .ben6 img {
+    grid-area: ben6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.beneficios__text {
+    font-size: 25px;
+}
