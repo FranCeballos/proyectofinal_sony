@@ -1,12 +1,9 @@
-/* Clases extras usadas en pagina de Hardware */
-
 .seccion1Hardware__fondo {
     background-image: url(../images/hardware/fondoseccion1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 .seccion2Hardware {
     padding: 30px;
@@ -16,31 +13,30 @@
     align-items: center;
     max-width: 100%;
     min-height: 100vh;
-   background-color: rgb(0, 79, 237);
-}
+    background-color: rgb(0, 79, 237);
 
-.seccion2Hardware__parte {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
-    max-width: 30%;
-}
+   &__parte {
+       display: flex;
+       flex-direction: column;
+       justify-content: right;
+       align-items: center;
+       max-width: 30%;
+   }
 
-.seccion2Hardware__titulo {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    color: white;
-    font-weight: 300;
-}
+   &__titulo {
+       margin-top: 50px;
+       margin-bottom: 30px;
+       color: white;
+       font-weight: 300;
+   }
 
-.seccion2Hardware__texto {
+   &__texto {
     color: white;
     font-weight: 300;
     text-align: center;
+   }
 }
 
-/* GRID Ecosistema Play */
 .ecosistema {
     min-height: 500px;
     padding: 50px;

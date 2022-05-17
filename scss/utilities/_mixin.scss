@@ -1,0 +1,8 @@
+@mixin bg($bgSource, $bgSize, $bgPosition, $bgRepeat, $bgMin-height, $bgWidth) {
+    background-image: url($bgSource);
+    background-size: $bgSize;
+    background-position: $bgPosition;
+    background-repeat: $bgRepeat;
+    min-height: $bgMin-height;
+    width: $bgWidth;
+}
