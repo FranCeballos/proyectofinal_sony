@@ -33,27 +33,13 @@
     text-align: center;
     font-size: 40px;
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .subscribe__heading--lessMargin {
     text-align: center;
     font-size: 40px;
     margin-bottom: 50px;
-}
-
-
-.subscribe__heading--white {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 100px;
-    color: white;
-}
-
-.subscribe__heading--white {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 100px;
 }
 
 .subscribe__grid {
@@ -152,4 +138,31 @@
 
 .beneficios__text {
     font-size: 25px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .seccion1PsPlus__titulo {
+        padding: 100px 40px 100px 40px;
+        font-size: 3rem;
+    }
+
+    .subscribe__heading {
+        font-size: 35px;
+    }
+
+    .subscribe__grid {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+
+    .beneficios__grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .beneficios__text {
+        font-size: 20px;
+    }
 }

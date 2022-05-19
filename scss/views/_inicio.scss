@@ -62,86 +62,108 @@
     }
 }
 
-.seccionNormal {
-    padding: 60px;
-    margin: 0;
-    display: block;
-    position: relative;
+.seccion {
+    &__normal {
+        padding: 60px;
+        margin: 0;
+        display: block;
+        position: relative;
+    }
+
+    &__small {
+        padding: 15% 50px 50px 50px;
+        margin: 0;
+        display: block;
+        position: relative;
+        min-height: 40%;
+    }
+
+    &__textoNormal {
+        margin-top: 30%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    &__textoSmall {
+        margin-top: 10%;
+        margin-right: 25%;
+        max-width: 100%;
+        padding: 20px;
+        display: inline-block;
+    }
+
+    &__titulo--negro {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: black;
+        text-align: left;
+        position: relative;
+
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: black;
+            text-align: left;
+            position: relative;
+        }
+    }
+    
+    &__titulo--blanco {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: white;
+        text-align: left;
+        position: relative;
+
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: white;
+            text-align: left;
+            position: relative;
+        }
+    }
+
+    &__parrafo--blanco {
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: white;
+        position: relative;
+        margin-bottom: 20px;
+
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-size: 1.25rem;
+            font-weight: 200;
+            color: white;
+            position: relative;
+            margin-bottom: 20px;
+        }
+    }
+
+    
+    &__parrafo--negro {
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: black;
+        position: relative;
+        margin-bottom: 20px;
+    
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-size: 1.25rem;
+            font-weight: 200;
+            color: black;
+            position: relative;
+            margin-bottom: 20px;
+        }
+    }
 }
 
-.seccionSmall {
-    padding: 15% 50px 50px 50px;
-    margin: 0;
-    display: block;
-    position: relative;
-    min-height: 40%;
-}
-
-.seccion__textoNormal {
-    margin-top: 30%;
-    max-width: 100%;
-    padding: 20px;
-}
-
-.seccion__textoSmall {
-    margin-top: 10%;
-    margin-right: 25%;
-    max-width: 100%;
-    padding: 20px;
-    display: inline-block;
-}
-
-.seccion__titulo--blanco {
-    margin-bottom: 20px;
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: white;
-    text-align: left;
-    position: relative;
-}
-
-.seccion__parrafo--blanco {
-    font-size: 1.25rem;
-    font-weight: 200;
-    color: white;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.seccion__titulo--negro {
-    margin-bottom: 20px;
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: black;
-    text-align: left;
-    position: relative;
-}
-
-.seccion__titulo--negroMargin {
-    margin: 0px 0px 20px 20px;
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: black;
-    text-align: left;
-    position: relative;
-}
-
-.seccion__parrafo--negro {
-    font-size: 1.25rem;
-    font-weight: 200;
-    color: black;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.seccion__parrafo--negroMargin {
-    margin: 0px 0px 20px 20px;
-    font-size: 1.25rem;
-    font-weight: 200;
-    color: black;
-    position: relative;
-    margin-bottom: 20px;
-}
 
 .descubremas__box {
     padding: 12px 15px 12px 15px;
@@ -212,4 +234,40 @@
     height: 200px;
     display: inline-block;
     position: absolute;
+}
+
+@media screen and (max-width: 425px) {
+    .seccion1__titulo {
+        padding: 25% 50px 25% 50px;
+        font-size: 3rem;
+    }
+
+    .seccion3__image {
+        background-size: 90%;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .descubremas__text--negro {
+        font-size: 12px;
+    }
+
+    .descubremas__text--blanco {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .seccion1__titulo {
+        padding: 25% 50px 25% 50px;
+        font-size: 3.5rem;
+    }
+
+    .seccion__textoNormal {
+        padding: 20px 20px 20px 0px;
+    }
+
+    .seccion__textoSmall {
+        padding: 20px 20px 20px 0px;
+    }
 }
