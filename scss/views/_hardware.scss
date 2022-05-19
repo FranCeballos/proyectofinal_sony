@@ -3,6 +3,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 0;
+}
+
+.seccion1Hardware__titulo {
+        padding: 25% 4rem 25% 4rem;
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        position: relative;
+        margin: 0;
 }
 
 .seccion2Hardware {
@@ -28,6 +39,7 @@
        margin-bottom: 30px;
        color: white;
        font-weight: 300;
+       text-align: center;
    }
 
    &__texto {
@@ -39,7 +51,7 @@
 
 .ecosistema {
     min-height: 500px;
-    padding: 50px;
+    padding: 50px 250px 50px 250px;
 
     &__objbox {
         display: flex;
@@ -53,8 +65,9 @@
 
     &__heading {
         text-align: center;
-        font-size: 40px;
+        font-size: 55px;
         margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     &__titulo {
@@ -62,6 +75,10 @@
         font-size: 2rem;
         margin-bottom: 30px;
     }
+}
+
+.cover {
+    margin-top: 20px;
 }
 
 .app {
@@ -81,5 +98,278 @@
 
     &__img {
         max-width: 100%;
+    }
+}
+
+.seccion__titulo--blanco {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+
+    &Margin {
+        margin: 0px 0px 20px 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: white;
+        text-align: left;
+        position: relative;
+    }
+}
+
+.seccion__parrafo--blanco {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    margin-bottom: 0px;
+
+    &Margin {
+        margin: 0px 0px 20px 20px;
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: white;
+        position: relative;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .seccion1Hardware__titulo {
+        padding: 25% 4rem 25% 4rem;
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        position: relative;
+        margin: 0;
+}
+
+    .seccion2Hardware {
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+        min-height: 100vh;
+        background-color: rgb(0, 79, 237);
+    
+       &__parte {
+           display: flex;
+           flex-direction: column;
+           justify-content: right;
+           align-items: center;
+           max-width: 30%;
+       }
+    
+       &__titulo {
+           margin-top: 50px;
+           margin-bottom: 30px;
+           color: white;
+           font-weight: 300;
+           font-size: 1.60rem;
+           text-align: center;
+       }
+    
+       &__texto {
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        font-size: 0.75rem;
+       }
+    }
+
+    .ecosistema {
+        min-height: 500px;
+        padding: 50px 150px 50px 150px;
+    
+        &__objbox {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        &__heading {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+    
+        &__titulo {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .app {
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        min-height: 50vh;
+        max-width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+    
+        &__linkbox {
+            width: 20%;
+            height: 20%;
+        }
+    
+        &__img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .seccion1Hardware__fondo {
+        background-image: url(../images/hardware/fondoseccion1.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 0;
+        min-height: 100vh;
+    }
+
+    .seccion1Hardware__titulo {
+        padding: 50% 4rem 50% 4rem;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+        object-position: center;
+    }
+
+    .seccion2Hardware {
+        padding: 100px 50px 100px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+        min-height: 100vh;
+        background-color: rgb(0, 79, 237);
+
+        gap: 100px;
+    
+       &__parte {
+           display: flex;
+           flex-direction: column;
+           justify-content: right;
+           align-items: center;
+           max-width: 60%;
+       }
+    
+       &__titulo {
+           margin-top: 50px;
+           margin-bottom: 30px;
+           color: white;
+           font-weight: 300;
+           font-size: 1.60rem;
+           text-align: center;
+       }
+    
+       &__texto {
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        font-size: 1rem;
+       }
+    }
+
+    .ecosistema {
+        min-height: 500px;
+        padding: 50px 0px 50px 0px;
+    
+        &__objbox {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        &__heading {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+    
+        &__titulo {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            padding: 0px 30px 0px 30px;
+        }
+    }
+
+    .app {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+    
+        &__linkbox {
+            margin-top: 50px;
+            width: 75%;
+            height: 75%;
+        }
+    
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    .seccion__titulo--blanco {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .seccion__parrafo--blanco {
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: white;
+        position: relative;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ecosistema {
+        min-height: 500px;
+        padding: 50px 0px 50px 0px;
+
+        &__heading {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
     }
 }

@@ -1,3 +1,7 @@
+.main {
+    margin-top: 60px;
+}
+
 .seccion1 {
     max-height: 100%;
     position: relative;
@@ -110,42 +114,6 @@
         }
     }
     
-    &__titulo--blanco {
-        margin-bottom: 20px;
-        font-weight: 300;
-        font-size: 2.5rem;
-        color: white;
-        text-align: left;
-        position: relative;
-
-        &Margin {
-            margin: 0px 0px 20px 20px;
-            font-weight: 300;
-            font-size: 2.5rem;
-            color: white;
-            text-align: left;
-            position: relative;
-        }
-    }
-
-    &__parrafo--blanco {
-        font-size: 1.25rem;
-        font-weight: 200;
-        color: white;
-        position: relative;
-        margin-bottom: 20px;
-
-        &Margin {
-            margin: 0px 0px 20px 20px;
-            font-size: 1.25rem;
-            font-weight: 200;
-            color: white;
-            position: relative;
-            margin-bottom: 20px;
-        }
-    }
-
-    
     &__parrafo--negro {
         font-size: 1.25rem;
         font-weight: 200;
@@ -163,7 +131,6 @@
         }
     }
 }
-
 
 .descubremas__box {
     padding: 12px 15px 12px 15px;
