@@ -34,6 +34,14 @@
         margin-bottom: 50px;
     }
 
+    &__heading--white {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 100px;
+        margin-top: 90px;
+        color: white;
+    }
+
     &__black {
         background-color: black;
         padding: 60px 10% 60px 10%;
@@ -45,6 +53,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-bottom: 100px;
     }
 
     &__box {
@@ -84,6 +93,10 @@
         row-gap: 10px;
         column-gap: 10px;
         margin: 0% 20% 0% 20%;
+    }
+
+    &__text {
+        font-size: 25px;
     }
 }
 
@@ -136,15 +149,22 @@
     max-width: 100%;
 }
 
-.beneficios__text {
-    font-size: 25px;
-}
-
 @media screen and (max-width: 768px) {
     .subscribe {
         padding: 60px 5% 60px 5%;
         min-height: 100vh;
         max-width: 100%;
+
+        &__black {
+            background-color: black;
+            padding: 40px 5% 100px 5%;
+            min-height: 100vh;
+            max-width: 100%;
+        }
+
+        &__price--white {
+            font-size: 1rem;
+        }
     }
 
     .beneficios {
@@ -152,17 +172,6 @@
         min-height: 100vh;
         width: 100%;
         padding: 50px 5% 50px 5%;
-    }
-
-    .subscribe__black {
-            background-color: black;
-            padding: 0px 5% 100px 5%;
-            min-height: 100vh;
-            max-width: 100%;
-    }
-
-    .subscribe__price--white {
-        font-size: 1rem;
     }
 }
 
@@ -183,31 +192,37 @@
         }
     }
 
-    .subscribe__heading {
-        font-size: 35px;
-        margin-top: 0;
-    }
+    .subscribe {
+        &__heading {
+            font-size: 35px;
+            margin-top: 40px;
+        }
 
-    .subscribe__grid {
-        flex-direction: column;
-        row-gap: 50px;
-        align-items: center;
-    }
+        &__grid {
+            flex-direction: column;
+            row-gap: 50px;
+            align-items: center;
+        }
 
-    .subscribe__price--white {
-        font-size: 1.5rem;
+        &__price--white {
+            font-size: 1.5rem;
+        }
+
+        &__black {
+            padding-top: 30px;
+        }
     }
 
     .beneficios {
          padding: 50px 10% 50px 10%;
-    }
-    
-    .beneficios__grid {
-        margin-left: 0;
-        margin-right: 0;
-    }
 
-    .beneficios__text {
-        font-size: 20px;
+         &__grid {
+             margin-left: 0;
+             margin-right: 0;
+         }
+
+         &__text {
+             font-size: 20px;
+         }
     }
 }

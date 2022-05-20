@@ -4,6 +4,87 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.juegos__heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.seccionJuegos {
+
+    &__tituloNegro {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: black;
+        text-align: left;
+        position: relative;
+
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: black;
+            text-align: left;
+            position: relative;
+        }
+    }
+
+    &__tituloBlanco {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: white;
+        text-align: left;
+        position: relative;
+
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: white;
+            text-align: left;
+            position: relative;
+        }
+    }
+    
+    &__parrafoNegro {
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: black;
+        position: relative;
+        margin-bottom: 20px;
+    
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-size: 1.25rem;
+            font-weight: 200;
+            color: black;
+            position: relative;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__parrafoBlanco {
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: white;
+        position: relative;
+        margin-bottom: 20px;
+    
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-size: 1.25rem;
+            font-weight: 200;
+            color: white;
+            position: relative;
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .forbidden {
     &__textbox {
         grid-area: i1;
@@ -153,7 +234,7 @@
     }
 }
 
-.subscribe__heading--white {
+.juegos__heading--white {
     text-align: center;
     font-size: 40px;
     margin-bottom: 100px;
@@ -198,7 +279,37 @@
         }
     }
 
-    .subscribe__heading--white {
+    .seccionJuegos {
+        &__titulo {
+            &NegroMargin {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            &BlancoMargin {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+
+        &__parrafo {
+            &NegroMargin {
+                font-size: 1.25rem;
+                text-align:center;
+                padding: 0px 20px 0px 20px;
+                margin-left: 0;
+            }
+
+            &BlancoMargin {
+                font-size: 1.25rem;
+                text-align:center;
+                padding: 0px 20px 0px 20px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .juegos__heading--white {
         padding: 100px 20px 100px 20px;
         font-size: 35px;
         margin-top: 0px;
@@ -347,36 +458,43 @@
         }
     }
 
-    .seccion__titulo--negroMargin {
-        font-size: 2rem;
-        text-align: center;
+    .seccionJuegos {
+        &__titulo {
+            &NegroMargin {
+                font-size: 2rem;
+                text-align: center;
+                margin-left: 0;
+            }
+            
+            &BlancoMargin {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+
+        &__parrafo {
+
+            &NegroMargin {
+                font-size: 1.25rem;
+                text-align:center;
+                padding: 0px 20px 0px 20px;
+                margin-left: 0;
+            }
+            &BlancoMargin {
+                font-size: 1.25rem;
+                text-align:center;
+                padding: 0px 20px 0px 20px;
+                margin-left: 0;
+            }
+        }
     }
 
-    .seccion__parrafo--negroMargin {
-        font-size: 1.25rem;
-        text-align:center;
-        padding: 0px 20px 0px 20px;
-        margin-left: 0;
-    }
-
-    .seccion__titulo--blancoMargin {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .seccion__parrafo--blancoMargin {
-        font-size: 1.25rem;
-        text-align:center;
-        padding: 0px 20px 0px 20px;
-        margin-left: 0;
-    }
-
-    .subscribe__heading {
+    .juegos__heading {
         padding: 40px 20px 0px 20px;
         margin-top: 60px;
     }
 
-    .subscribe__heading--white {
+    .juegos__heading--white {
         padding: 100px 20px 100px 20px;
         font-size: 35px;
         margin-top: 0px;
@@ -498,3 +616,18 @@
         font-size: 2.70rem;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .forbidden__iframe {
+        width: 284.44px;
+        height: 160px;
+    }
+
+    .forbidden {
+        &__textbox {
+            grid-area: i1;
+            transform: translateY(-90px);
+        }
+    }
+}
+

@@ -67,9 +67,13 @@
     }
 }
 
-.legal__text {
-    color: white;
-    margin-top: 20px;
+.legal {
+    margin-bottom: 40px;
+    
+    &__text {
+        color: white;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 425px) {

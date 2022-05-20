@@ -96,7 +96,7 @@
         display: inline-block;
     }
 
-    &__titulo--negro {
+    &__tituloNegro {
         margin-bottom: 20px;
         font-weight: 300;
         font-size: 2.5rem;
@@ -113,8 +113,26 @@
             position: relative;
         }
     }
+
+    &__tituloBlanco {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: white;
+        text-align: left;
+        position: relative;
+
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: white;
+            text-align: left;
+            position: relative;
+        }
+    }
     
-    &__parrafo--negro {
+    &__parrafoNegro {
         font-size: 1.25rem;
         font-weight: 200;
         color: black;
@@ -130,87 +148,111 @@
             margin-bottom: 20px;
         }
     }
+
+    &__parrafoBlanco {
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: white;
+        position: relative;
+        margin-bottom: 20px;
+    
+        &Margin {
+            margin: 0px 0px 20px 20px;
+            font-size: 1.25rem;
+            font-weight: 200;
+            color: white;
+            position: relative;
+            margin-bottom: 20px;
+        }
+    }
 }
 
-.descubremas__box {
-    padding: 12px 15px 12px 15px;
-    margin: 30px 0px 0px 0px;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 10px;
-    border-radius: 40px;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    max-width: fit-content;
+.descubremas {
+    &__box {
+        padding: 12px 15px 12px 15px;
+        margin: 30px 0px 0px 0px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 10px;
+        border-radius: 40px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        max-width: fit-content;
+
+        &Blanco {
+            @extend .descubremas__box;
+            background-color: white;
+        }
+
+        &Negro {
+            @extend .descubremas__box;
+            background-color: black;
+        }
+
+        &Naranja {
+            @extend .descubremas__box;
+            background-color: map-get($map: $colors, $key: psplus);
+        }
+    }
+
+    &__text {
+        &Negro {
+            text-decoration: none;
+            color: black;
+        }
+
+        &Blanco {
+            text-decoration: none;
+            color: white;
+            margin: 0;
+        }
+    }
 }
 
-.descubremas__box--blanco {
-    @extend .descubremas__box;
-    background-color: white;
+.seccion2 {
+    &__image {
+        @include bg("../../images/collagejuegosplaystation.png", cover, center, no-repeat, 100vh, 100%);
+
+        &::before {
+            content: "";
+            width: 100%;
+            min-height: 100%;
+            position: absolute;
+            background-image: linear-gradient(to left bottom, rgba(0,0,0,0), rgba(0,0,0,0.9) 95%);
+        }
+    }
 }
 
-.descubremas__text--negro {
-    text-decoration: none;
-    color: black;
+.seccion3__image {
+    @include bg("../../images/ecosistemaplaystation.jpeg", 60%, bottom right, no-repeat, 100vh, 100%);
 }
 
-.descubremas__box--negro {
-    @extend .descubremas__box;
-    background-color: black;
+.seccion4__image {
+    @include bg("../../images/fondopsplus2.jpg", cover, bottom, no-repeat, 30vh, 100%);
 }
 
-.descubremas__box--naranja {
-    @extend .descubremas__box;
-    background-color: map-get($map: $colors, $key: psplus);
-}
-
-.descubremas__text--blanco {
-    text-decoration: none;
-    color: white;
-    margin: 0;
-}
-
-.seccion2__image {
-    @include bg("../../images/collagejuegosplaystation.png", cover, center, no-repeat, 100vh, 100%)
-}
-
-.seccion2__image::before {
+.seccion4__image::before {
     content: "";
     width: 100%;
     min-height: 100%;
     position: absolute;
-    background-image: linear-gradient(to left bottom, rgba(0,0,0,0), rgba(0,0,0,1) 95%);
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 80% );
+    top: 0;
+    left: 0;
 }
 
-.seccion3__image {
-    @include bg("../../images/ecosistemaplaystation.jpeg", 60%, bottom right, no-repeat, 100vh, 100%)
-}
-
-.seccion4__image {
-    @include bg("../../images/fondopsplus.jpg", cover, bottom, no-repeat, 30vh, 100%)
-}
-
-.seccion5__image {
-    background-color: rgb(0, 32, 90) ;
-    min-height: 30vh;
-}
-
-.seccion5__tools {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    position: absolute;
-}
-
-@media screen and (max-width: 425px) {
-    .seccion1__titulo {
-        padding: 25% 50px 25% 50px;
-        font-size: 3rem;
+.seccion5 {
+    &__image {
+        background-color: rgb(0, 32, 90);
+        min-height: 30vh;
     }
 
-    .seccion3__image {
-        background-size: 90%;
+    &__tools {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        position: absolute;
     }
 }
 
@@ -224,17 +266,52 @@
     }
 }
 
-@media screen and (max-width: 375px) {
-    .seccion1__titulo {
-        padding: 25% 50px 25% 50px;
-        font-size: 3.5rem;
+@media screen and (max-width: 425px) {
+    .seccion3__image {
+        background-size: 90%;
     }
 
+    .seccion1 {
+
+        &__titulo {
+            padding: 60% 50px 50% 50px;
+            font-size: 3rem;
+        }
+
+        &__fondo {
+            background-image: url(../images/main-16:9-playnotienelimites.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            min-height: 100%;
+            min-height: 100vh;
+        }
+        
+        &__fondo::before {
+            content: "";
+            max-width: 100%;
+            min-height: 100%;
+            background-position: bottom;
+            position: absolute;
+            background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,1) 150% );
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
     .seccion__textoNormal {
         padding: 20px 20px 20px 0px;
     }
 
     .seccion__textoSmall {
         padding: 20px 20px 20px 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .seccion1__titulo {
+        padding: 70% 50px 50% 50px;
+        font-size: 3.5rem;
     }
 }
