@@ -2,6 +2,10 @@ main {
     margin-top: 60px;
 }
 
+.inicio {
+    display: none;
+}
+
 .header {
     background-color: white;
     padding: 0.5rem;
@@ -15,14 +19,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.checkbtn {
-    cursor: pointer;
-}
-
-#check {
-    display: none;
 }
 
 .logoInicio {
@@ -104,29 +100,38 @@ nav{
   nav ul li a:hover{
     color: rgb(133, 150, 160);
   }
+
   nav .menu-btn i{
     color: black;
     font-size: 22px;
     cursor: pointer;
     display: none;
   }
-  input[type="checkbox"]{
+
+  .check {
     display: none;
   }
+
   @media (max-width: 1000px){
     nav{
       justify-content: space-between;
     }
   }
   @media (max-width: 920px) {
-    nav .menu-btn i{
+    nav .menu-btn i {
       display: block;
       padding-right: 15px;
     }
-    #click:checked ~ .menu-btn i:before{
+
+    .inicio {
+        display: inline;
+    }
+
+    #click:checked ~ .menu-btn i:before {
       content: "\f00d";
     }
-    nav ul{
+
+    nav ul {
       position: fixed;
       top: 60px;
       left: -100%;
@@ -137,25 +142,28 @@ nav{
       display: block;
       transition: all 0.3s ease;
     }
-    #click:checked ~ ul{
+
+    #click:checked ~ ul {
       left: 0;
     }
-    nav ul li{
+
+    nav ul li {
       width: 100%;
       margin: 40px 0;
     }
-    nav ul li a{
+
+    nav ul li a {
       width: 100%;
       margin-left: -100%;
       display: block;
       font-size: 20px;
       transition: 0.6s cubic-bezier(.33,.6,.44,1.08);
     }
-    #click:checked ~ ul li a{
+    #click:checked ~ ul li a {
       margin-left: 0px;
     }
     nav ul li a.active,
-    nav ul li a:hover{
+    nav ul li a:hover {
       background: none;
       color: rgb(133, 150, 160);
     }

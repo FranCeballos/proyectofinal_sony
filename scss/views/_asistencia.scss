@@ -9,7 +9,7 @@
 }
 
 .form {
-    padding: 40px 100px 40px 100px;
+    padding: 40px 100px 100px 100px;
 
     &__space {
         margin-bottom: 15px;
@@ -22,4 +22,20 @@
 
 .textarea {
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        padding: 40px 50px 100px 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form {
+        padding: 40px 50px 100px 50px;
+    }
+
+    .contacto__descripcion {
+        font-size: 14px;
+    }
 }
