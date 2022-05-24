@@ -25,7 +25,7 @@
     }
 
     &__fondo {
-        background-image: url(../../images/main-16_9-playnotienelimites.png);
+        background-image: url(../../images/main-16_9-playnotienelimites.webp);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -212,7 +212,7 @@
 
 .seccion2 {
     &__image {
-        @include bg("../../images/collagejuegosplaystation.png", cover, center, no-repeat, 100vh, 100%);
+        @include bg("../../images/collagejuegosplaystation.webp", cover, center, no-repeat, 100vh, 100%);
 
         &::before {
             content: "";
@@ -229,7 +229,7 @@
 }
 
 .seccion4__image {
-    @include bg("../../images/fondopsplus2.jpg", cover, bottom, no-repeat, 30vh, 100%);
+    @include bg("../../images/fondopsplus2.webp", cover, bottom, no-repeat, 30vh, 100%);
 }
 
 .seccion4__image::before {
