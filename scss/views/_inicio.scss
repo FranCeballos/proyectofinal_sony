@@ -43,13 +43,12 @@
     }
 }
 
-#animacion--entrada {
+.animacion--entrada {
     animation-duration: 2s;
     animation-name: zoomin;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(.3,.71,.17,1.04);
-   
 }
 
 @keyframes zoomin {
@@ -168,8 +167,42 @@
 }
 
 .descubremas {
+    &__borderWhite {
+        border-style: solid;
+        max-width: fit-content;
+        border-color: rgba(0, 0, 0, 0);
+        padding: 7px 4px 7px 4px;
+        margin: 0px 0px 0px 0px;
+        border-radius: 40px;
+        display: inline-block; 
+        transition: 0.3s cubic-bezier(.33,.6,.44,1.08);
+    }
+    
+    &__borderWhite:hover {
+        border-color: white;
+        transition: 0.3s cubic-bezier(.33,.6,.44,1.08);
+    }
+
+    &__borderBlack {
+        @extend .descubremas__borderWhite;
+    }
+    
+    &__borderBlack:hover {
+        border-color: black;
+        transition: 0.3s cubic-bezier(.33,.6,.44,1.08);
+    }
+
+    &__borderOrange {
+        @extend .descubremas__borderWhite;
+    }
+
+    &__borderOrange:hover{
+        border-color: #F3AE00;
+        transition: 0.3s cubic-bezier(.33,.6,.44,1.08);;
+    }
+
     &__box {
-        padding: 12px 15px 12px 15px;
+        padding: 7px 12px 7px 12px;
         margin: 30px 0px 0px 0px;
         font-size: 15px;
         font-weight: 600;
@@ -200,14 +233,23 @@
         &Negro {
             text-decoration: none;
             color: black;
+
+            &:hover {
+                color: black;
+            }
         }
 
         &Blanco {
             text-decoration: none;
             color: white;
             margin: 0;
+
+            &:hover {
+                color: white;
+            }
         }
     }
+
 }
 
 .seccion2 {
@@ -230,16 +272,17 @@
 
 .seccion4__image {
     @include bg("../../images/fondopsplus2.webp", cover, bottom, no-repeat, 30vh, 100%);
-}
 
-.seccion4__image::before {
-    content: "";
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 80% );
-    top: 0;
-    left: 0;
+    &::before {
+        content: "";
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 80% );
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
 }
 
 .seccion5 {

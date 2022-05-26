@@ -42,6 +42,10 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
+
+    &:hover {
+        color: white;
+    }
 }
 
 .navFooter {
@@ -64,6 +68,10 @@
         text-decoration: none;
         color: rgb(255, 255, 255);
         font-size: 14px;
+
+        &:hover {
+            color: white;
+        }
     }
 }
 
